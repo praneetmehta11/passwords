@@ -1,4 +1,8 @@
 import utils
+import os 
+
+if not os.path.exists('./dataStore'):
+    os.mkdir("./dataStore")
 
 def updateDataStore():
     with open(f'./dataStore/{websiteName}','a+') as file:
